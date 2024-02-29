@@ -1,19 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beltane</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="icon/IconBeltane.png" type="image/png" sizes="64x64">
+    <link rel="stylesheet" href="css/Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
-<body>    
-    <div class="blur-background"></div>
-    <div class="header">       
-        <div class="divider"></div> 
-        <img class="arbol1" src="https://img.hotimg.com/Captura_de_pantalla_2024-02-22_135415-removebg-preview.png" alt="arbol1" />
-        <img class="arbol2" src="https://img.hotimg.com/Captura_de_pantalla_2024-02-22_135415-removebg-preview.png" alt="arbol2" />
-        <img class="iconbeltane" src="https://img.hotimg.com/Untitled_design_6-removebg-preview-1.png" alt="Icono" />
-        <img class="title" src="https://img.hotimg.com/1000118504.png" alt="Título" />
-    </div>
+<body>
+
+    <script src="app.js"></script>
+
+    <header id="ienicio">
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#about-us">Sobre Nosotros</a>
+            <a href="#Portafolio">Portafolio</a>
+            <a href="#Hablemos">Hablemos</a>
+        </nav>
+        <div class="wave" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.87 C364.93,293.97 296.65,16.15 500.00,49.87 L500.00,149.67 L0.00,149.67 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros" id="about-us">
+            <h2 class="titulo">Sobre Nosotros</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img class="about-us" src="icon/ilustracion2.svg" alt="" style="width: 400px; height: 400px;">          
+                <div class="contenido-text"> <!-- Abres el div aquí -->
+                    <h3><span>1</span> primer punto sobre nosotros</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde laborum officia exercitationem, molestias, veritatis reprehenderit est quaerat, nobis incidunt tempora aut quos dolorem. Culpa ipsam, obcaecati quisquam soluta saepe numquam.</p>
+                    <h3><span>2</span> segundo punto sobre nosotros</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde laborum officia exercitationem, molestias, veritatis reprehenderit est quaerat, nobis incidunt tempora aut quos dolorem. Culpa ipsam, obcaecati quisquam soluta saepe numquam.</p>
+                </div> <!-- Cierras el div aquí -->
+            </div>
+            
+        </section>
+        <section class="Portafolio" id="Portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Portafolio</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="icon/img1.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="icon/icono1.png" alt="">
+                            <p>titulo de trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="icon/img2.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="icon/icono1.png" alt="">
+                            <p>titulo de trabajo</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="icon/img3.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="icon/icono1.png" alt="">
+                            <p>titulo de trabajo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <section class="contact"  id="Hablemos">
+        <div class="u-wrapper">
+          <div class="contact-content">    
+            <form id="form" action="" class="form">
+              <h2 class="titulo"><span>HABLEMOS</span></h3>
+              <label for="name">Nombre Completo <span>*</span></label>
+              <input name="name" required type="text" id="name" placeholder="Juan">
+              <label for="email">Correo electrónico <span>*</span></label>
+              <input name="email" type="text" id="email" required placeholder="juan@gmail.com">
+              <label for="message">Mensaje</label>
+              <textarea id="message" name="message" id="" cols="30" rows="10"></textarea>
+              <button type="submit" class="btn primary full">enviar mensaje</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="social">
+          
+          <i class="social-item">
+            <img src="icon/instagram.svg" alt="">
+          </i>
+
+          <i class="social-item">
+            <img src="icon/github.svg" alt="">
+          </i>
+
+          <i class="social-item">
+            <img src="icon/twitter.svg" alt="">
+          </i>
+
+        </div>
+
+        <p class="footer-copyright">
+          Copyright 2024 - Todos los derechos reservados.
+        </p>
+    
+      </footer>
 </body>
 </html>

@@ -1,0 +1,236 @@
+main {
+    margin-top: 80px; /* Ajusta este valor según el tamaño de tu barra de navegación */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'open sans';
+
+}
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+/*
+    HEADER
+*/
+header{
+    width: 100%;
+    height: 600px;
+    background: url(../icon/FondBeltane.png);
+    background-size:100%;
+    background-position-y: center;
+    background-attachment: fixed;
+    position: relative;
+}
+nav{
+    position: fixed; /* Fijar la barra de navegación en la parte superior */
+    top: 0; /* Asegurarse de que esté en la parte superior */
+    right: 0; /* Alinearlo a la derecha */
+    width: 100%; /* Ajustar al ancho completo */
+    text-align: right; /* Alinear texto a la derecha */
+    padding: 30px 50px 0 0; /* Añadir espaciado */
+    background-color: rgba(0, 0, 0, 0.8); /* Color de fondo semi-transparente */
+    transition: top 0.3s ease; /* Agregar una transición suave */
+    z-index: 9999;
+}
+nav > a{
+    color: white; /* Color del texto */
+    text-decoration: none; /* Eliminar subrayado del enlace */
+    margin-right: 20px; /* Añadir espacio entre enlaces */
+}
+nav > a:hover{
+    text-decoration: underline;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+/*
+    About us
+*/
+.contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.imagen-about-us{
+    width: 48%;
+}
+contenedor-sobre-nosotros .contenido-text{
+    width: 48%;
+}
+.contenido-text h3{
+    margin-bottom: 15px;
+}
+.contenido-text h3 span{
+    background: #4d0686;
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+    margin-right: 5px;
+}
+.contenido-text{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+}
+/*
+    galeria
+*/
+.portafolio{
+    background: #f2f2f2;
+}
+.galeria-port{    
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;    
+}
+.imagen-port{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 380px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+.imagen-port img{    
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    display:block;
+}
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    transform: scale(0);
+    background: hsla(273, 91%, 27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria img{
+    width: 50px;
+}
+.hover-galeria p{
+    color: #fff;
+}
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact {
+    margin-block-end: 5em;
+  }
+  
+  .form {
+    max-inline-size: 550px;
+    margin: auto;
+  }
+  
+  .form label {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: .5em;
+    padding-inline-start: .5em;
+  }
+  
+  .form label span {
+    color: #DA1414;
+  }
+  
+  .form input, .form textarea {
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 1rem;
+    padding: .8em;
+    border-radius: .5em;
+    border: 1px solid #858C94;
+  }
+  
+  .form textarea {
+    margin-block-end: 2em;
+    font-family: inherit;
+  }
+  
+  input::-webkit-input-placeholder {
+    color: #0F0A0A88;
+  }
+  
+
+
+
+
+
+  
+
+.social-item {
+    background: var(--primary);
+    display: inline-block;
+    inline-size: 44px;
+    block-size: 44px;
+    text-align: center;
+    line-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 4px;
+    justify-content: center;
+    border: 2px solid var(--black);
+  }
+  
+  .social-item + .social-item {
+    margin-left: 1em;
+  }
+  
+  .social-item img {
+    vertical-align: middle;
+  }
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;        
+    align-items: center;
+    flex-direction: column;
+}
