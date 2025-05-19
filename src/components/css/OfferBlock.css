@@ -1,0 +1,44 @@
+/* 📁 styles/components/offerBlock.css */
+
+.offer-block {
+  background-color: var(--color-bg);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: var(--font-main);
+  color: var(--color-dark);
+  max-width: 800px;
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.offer-block h2 {
+  font-size: 2rem;
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+.offer-block p {
+  font-size: 1.1rem;
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.offer-block .btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+  padding: 0.75rem 2rem;
+  border-radius: var(--radius);
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.offer-block .btn-primary:hover,
+.offer-block .btn-primary:focus {
+  background-color: #5e2d7c; /* Un tono más oscuro del primary */
+  outline: none;
+}

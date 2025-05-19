@@ -1,0 +1,9 @@
+/* 📁 styles/layout.css (agrega o reemplaza esta sección) */
+
+main {
+  min-height: 80vh;
+  padding: var(--spacing-md) var(--spacing-sm);
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}

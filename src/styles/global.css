@@ -1,0 +1,151 @@
+/* ==============================
+   📁 styles/global.css
+   Estilos base globales y variables
+============================== */
+
+:root {
+  --color-primary: #7d3c98;
+  --color-secondary: #d2b48c;
+  --color-bg: #fffdf7;
+  --color-text: #333;
+  --color-dark: #1a1a1a;
+
+  --font-main: 'Poppins', sans-serif;
+
+  --spacing-xs: 0.5rem;
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 4rem;
+  --radius: 12px;
+  --transition: all 0.3s ease;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-secondary);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-dark);
+  margin-bottom: 0.5em;
+  font-weight: 600;
+}
+
+/* ==============================
+   📁 styles/layout.css
+   Layouts y estructuras reutilizables
+============================== */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: var(--spacing-lg) 0;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grid {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+/* ==============================
+   📁 styles/typography.css
+   Tipografías, tamaños y formatos
+============================== */
+
+.text-center {
+  text-align: center;
+}
+
+.heading-xl {
+  font-size: 3rem;
+}
+
+.heading-lg {
+  font-size: 2.25rem;
+}
+
+.heading-md {
+  font-size: 1.5rem;
+}
+
+.paragraph {
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+/* ==============================
+   📁 styles/buttons.css
+   Estilos reutilizables para botones
+============================== */
+
+.btn {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #5e2d7c;
+}
+
+.btn-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-dark);
+}
+
+.btn-secondary:hover {
+  background-color: #b89f7a;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+}
+
+.btn-outline:hover {
+  background-color: var(--color-primary);
+  color: white;
+}

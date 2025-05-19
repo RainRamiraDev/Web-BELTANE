@@ -1,0 +1,85 @@
+.hero {
+  display: flex;
+  align-items: center;       /* Centra verticalmente */
+  justify-content: center;   /* Centra horizontalmente */
+  min-height: 100vh;
+  padding: 2rem;
+  background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+  color: #ecf0f1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;        /* Para que texto quede centrado */
+}
+
+
+.hero-content {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;      /* Centra los hijos horizontalmente */
+  justify-content: center;
+}
+
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.2;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.hero-buttons {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.hero-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--spacing-sm);
+  flex: 1 1 300px;
+}
+
+.hero-images img {
+  max-width: 250px;
+  border-radius: var(--radius);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  user-select: none;
+}
+
+/* Animación fadeInUp: opacidad de 0 a 1 y desplazamiento vertical hacia arriba */
+/* Animación fadeInUp */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Clase base para animar con fadeInUp */
+.animate-fadeInUp {
+  opacity: 0; /* empieza invisible */
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+}
+
+/* Diferentes delays para escalonar animación */
+.animate-delay-1 {
+  animation-delay: 0.3s;
+}
+
+.animate-delay-2 {
+  animation-delay: 0.6s;
+}
+

@@ -1,0 +1,176 @@
+/* === Portfolio View Styles === */
+
+.portfolio-section {
+  padding: 4rem 1rem;
+  background-color: var(--bg-light);
+  color: var(--text-dark);
+}
+
+.portfolio-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 3rem;
+}
+
+.portfolio-card {
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.card-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.card-content {
+  padding: 1.5rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content h3 {
+  font-size: 1.25rem;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+
+.client-name {
+  font-size: 0.9rem;
+  color: var(--gray-600);
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  flex-grow: 1;
+  margin-bottom: 1rem;
+  color: var(--text-base);
+}
+
+.tech-stack {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  padding: 0;
+}
+
+.tech-stack li {
+  background-color: var(--primary-light);
+  color: var(--primary-color);
+  padding: 0.3rem 0.7rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.btn-portfolio {
+  text-align: center;
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+  margin-top: auto;
+}
+
+.btn-portfolio:hover {
+  background-color: var(--primary-dark);
+}
+
+/* CTA Section */
+
+.cta {
+  margin-top: 4rem;
+  font-size: 1.1rem;
+  color: var(--text-base);
+}
+
+.cta .btn {
+  margin-top: 1rem;
+}
+
+/* Responsive adjustments */
+
+@media (max-width: 768px) {
+  .portfolio-section {
+    padding: 3rem 1rem;
+  }
+
+  .card-content {
+    padding: 1rem;
+  }
+  
+}
+
+
+/* === Testimonial Section === */
+
+.testimonial-section {
+  margin-top: 5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--gray-200);
+}
+
+.testimonial-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  margin-top: 2rem;
+}
+
+.testimonial-card {
+  background-color: var(--white);
+  border-radius: 1rem;
+  box-shadow: var(--shadow-md);
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.testimonial-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.testimonial-message {
+  font-style: italic;
+  color: var(--text-base);
+  margin-bottom: 1rem;
+}
+
+.testimonial-name {
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.testimonial-role {
+  font-size: 0.85rem;
+  color: var(--gray-600);
+}
+

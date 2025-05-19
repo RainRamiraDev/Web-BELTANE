@@ -1,0 +1,125 @@
+/* Contenedor principal de la sección */
+.services-section {
+  position: relative;
+  padding: 4rem 2rem;
+  background: #f7f9fc;
+}
+
+/* Título principal */
+.heading-lg {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #1a1a1a;
+}
+
+/* Lista de servicios */
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+/* Cada ítem de servicio */
+.service-item {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  width: 260px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+
+.service-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Icono decorativo */
+.service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
+  color: #5936b0;
+}
+
+/* Título de cada servicio */
+.heading-md {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #222;
+}
+
+/* Descripción */
+.paragraph {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Popup que aparece al hacer hover */
+.popup-hover {
+  position: absolute;
+  background: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  border-radius: 1rem;
+  padding: 1rem;
+  width: 280px;
+  z-index: 10;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.popup-hover h4 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.popup-hover p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Imagen dentro del popup */
+.popup-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive (opcional) */
+@media (max-width: 768px) {
+  .services-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .popup-hover {
+    position: fixed;
+    top: auto !important;
+    bottom: 2rem;
+    left: 50% !important;
+    transform: translateX(-50%);
+    width: 90%;
+  }
+}
