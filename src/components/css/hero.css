@@ -4,9 +4,9 @@
   justify-content: center;   /* Centra horizontalmente */
   min-height: 100vh;
   padding: 2rem;
-  background: linear-gradient(135deg, #34495e 0%, #2c3e50 100%);
+  background: linear-gradient(135deg,var(--color-dark) 0%,var(--color-bg) 100%);
   color: #ecf0f1;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: var(----font-main);
   text-align: center;        /* Para que texto quede centrado */
 }
 
@@ -25,6 +25,7 @@
   font-size: 3rem;
   margin-bottom: var(--spacing-sm);
   line-height: 1.2;
+  color: var(--color-light);
 }
 
 .hero-content p {

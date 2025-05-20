@@ -22,7 +22,7 @@
 .offer-block p {
   font-size: 1.1rem;
   margin-bottom: var(--spacing-md);
-  color: var(--color-text);
+  color: var(--color-text-light);
   line-height: 1.5;
 }
 
@@ -39,6 +39,6 @@
 
 .offer-block .btn-primary:hover,
 .offer-block .btn-primary:focus {
-  background-color: #5e2d7c; /* Un tono más oscuro del primary */
+  background-color: var(--color-secondary); /* Un tono más oscuro del primary */
   outline: none;
 }

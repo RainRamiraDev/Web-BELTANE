@@ -2,7 +2,7 @@
 
 .portfolio-section {
   padding: 4rem 1rem;
-  background-color: var(--bg-light);
+  background-color: var(--color-bg);
   color: var(--text-dark);
 }
 
@@ -14,7 +14,7 @@
 }
 
 .portfolio-card {
-  background-color: var(--white);
+  background-color: var(--color-secondary);
   border-radius: 1rem;
   box-shadow: var(--shadow-md);
   overflow: hidden;
@@ -45,7 +45,7 @@
 
 .card-content h3 {
   font-size: 1.25rem;
-  color: var(--primary-color);
+  color: var(--color-primary);
   margin-bottom: 0.5rem;
 }
 
@@ -58,7 +58,7 @@
 .description {
   flex-grow: 1;
   margin-bottom: 1rem;
-  color: var(--text-base);
+  color: var(--color-text-light);
 }
 
 .tech-stack {
@@ -71,28 +71,12 @@
 }
 
 .tech-stack li {
-  background-color: var(--primary-light);
-  color: var(--primary-color);
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
   padding: 0.3rem 0.7rem;
   border-radius: 9999px;
   font-size: 0.75rem;
   font-weight: 500;
-}
-
-.btn-portfolio {
-  text-align: center;
-  background-color: var(--primary-color);
-  color: var(--white);
-  padding: 0.6rem 1.2rem;
-  border-radius: 0.5rem;
-  text-decoration: none;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-  margin-top: auto;
-}
-
-.btn-portfolio:hover {
-  background-color: var(--primary-dark);
 }
 
 /* CTA Section */
@@ -100,7 +84,7 @@
 .cta {
   margin-top: 4rem;
   font-size: 1.1rem;
-  color: var(--text-base);
+  color: var(--color-primary);
 }
 
 .cta .btn {
@@ -137,7 +121,7 @@
 }
 
 .testimonial-card {
-  background-color: var(--white);
+  background-color: var(--color-secondary);
   border-radius: 1rem;
   box-shadow: var(--shadow-md);
   padding: 2rem;
@@ -147,7 +131,7 @@
 
 .testimonial-card:hover {
   transform: translateY(-4px);
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--color-primary);
 }
 
 .testimonial-avatar {
@@ -160,13 +144,13 @@
 
 .testimonial-message {
   font-style: italic;
-  color: var(--text-base);
+  color: var(--color-text-light);
   margin-bottom: 1rem;
 }
 
 .testimonial-name {
   font-weight: 600;
-  color: var(--text-dark);
+  color: var(--color-text-light);
 }
 
 .testimonial-role {

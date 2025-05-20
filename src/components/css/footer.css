@@ -1,8 +1,8 @@
 /* 📁 styles/components/footer.css */
 
 .footer {
-  background-color: var(--color-dark);
-  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
   padding: var(--spacing-md) var(--spacing-lg);
   text-align: center;
   font-family: var(--font-main);
@@ -23,7 +23,7 @@
 }
 
 .footer-links a {
-  color: var(--color-primary);
+  color: var(--color-text-light);
   text-decoration: none;
   font-weight: 600;
   transition: color 0.3s ease;
