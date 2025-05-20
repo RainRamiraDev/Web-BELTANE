@@ -4,17 +4,17 @@
 ============================== */
 
 :root {
-  --color-primary: #1A151F;
-  --color-secondary: #8A0303;
-  --color-bg: #D98723;
+  --color-primary: #0D1321;
+  --color-secondary: #515661;
+  --color-bg: #FFFFFA;
   --color-text-dark: #1A151F;
   --color-text-light: #ffff;
   --color-dark: #261A17;
   --error-message: #8A0303;
-  --success-message: #D98723;
+  --success-message: #4C79E0;
 
 
-  --font-main: 'Poppins', sans-serif;
+  --font-main: 'Kanit', sans-serif;
 
   --spacing-xs: 0.5rem;
   --spacing-sm: 1rem;

@@ -64,7 +64,7 @@ const PortfolioView = () => {
       </p>
 
       <div className="portfolio-grid">
-        {projects.map(({ id, title, client, image, description, tech, url }) => (
+        {projects.map(({ id, title, client, image, description, tech,}) => (
           <div className="portfolio-card" key={id}>
             <div className="card-image">
               <img src={image} alt={`Mockup de ${title}`} loading="lazy" />
@@ -78,29 +78,16 @@ const PortfolioView = () => {
                   <li key={i}>{t}</li>
                 ))}
               </ul>
-              {url && (
-                <a
-                  href={url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="btn-portfolio"
-                >
-                  Ver proyecto
-                </a>
-              )}
+        
             </div>
           </div>
         ))}
       </div>
 
-      <div className="cta text-center">
-        <p>¿Te gustaría que tu proyecto esté aquí?</p>
-        <a href="#contact" className="btn btn-primary">Agenda una llamada</a>
-      </div>
 
       {/* Testimonios */}
       <div className="testimonial-section">
-        <h2 className="heading-md text-center">Testimonios</h2>
+        <h1 className="heading-lg text-center">Testimonios</h1>
         <div className="testimonial-grid">
           {testimonials.map(({ name, role, message, image }, index) => (
             <div className="testimonial-card" key={index}>

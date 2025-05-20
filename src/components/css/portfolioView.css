@@ -3,7 +3,7 @@
 .portfolio-section {
   padding: 4rem 1rem;
   background-color: var(--color-bg);
-  color: var(--text-dark);
+  color: var(--color-text-dark);
 }
 
 .portfolio-grid {
@@ -26,6 +26,8 @@
 .portfolio-card:hover {
   transform: translateY(-5px);
   box-shadow: var(--shadow-lg);
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
 }
 
 .card-image img {
@@ -45,7 +47,6 @@
 
 .card-content h3 {
   font-size: 1.25rem;
-  color: var(--color-primary);
   margin-bottom: 0.5rem;
 }
 
@@ -53,6 +54,7 @@
   font-size: 0.9rem;
   color: var(--gray-600);
   margin-bottom: 0.5rem;
+   color: var(--color-text-light);
 }
 
 .description {
@@ -127,11 +129,14 @@
   padding: 2rem;
   text-align: center;
   transition: transform 0.3s ease;
+  color: var(--color-primary);
 }
 
 .testimonial-card:hover {
   transform: translateY(-4px);
   box-shadow: var(--color-primary);
+    background-color: var(--color-primary);
+  color: var(--success-message);
 }
 
 .testimonial-avatar {

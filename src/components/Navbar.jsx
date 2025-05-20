@@ -6,7 +6,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <NavLink to="/" className="logo-text">🍂 BELTANE</NavLink>
+        <NavLink to="/" className="logo-text">
+        <img src="/src/assets/logonombreblanco.png" alt="Logo" className="logo-image" />
+        </NavLink>
       </div>
       <ul className="navbar-menu">
         <li><NavLink to="/" end>Inicio</NavLink></li>

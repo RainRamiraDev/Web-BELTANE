@@ -25,7 +25,7 @@
 
 /* Cada ítem de servicio */
 .service-item {
-  background: white;
+  background: var(--color-secondary);
   border: 1px solid #e0e0e0;
   border-radius: 1rem;
   padding: 1.5rem;
@@ -40,32 +40,34 @@
 .service-item:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
 }
 
 /* Icono decorativo */
 .service-icon {
   font-size: 2.5rem;
   margin-bottom: 0.8rem;
-  color: #5936b0;
+  color: var(--color-primary);
 }
 
 /* Título de cada servicio */
 .heading-md {
   font-size: 1.3rem;
   margin-bottom: 0.5rem;
-  color: #222;
+  color: var(--color-text-dark);
 }
 
 /* Descripción */
 .paragraph {
   font-size: 1rem;
-  color: #555;
+  color: var(--color-text-dark);
 }
 
 /* Popup que aparece al hacer hover */
 .popup-hover {
   position: absolute;
-  background: white;
+  background: var(--color-secondary);
   border: 1px solid #ccc;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   border-radius: 1rem;
@@ -79,11 +81,11 @@
 .popup-hover h4 {
   margin-top: 0;
   font-size: 1.1rem;
-  color: #333;
+  color: var(--color-primary);
 }
 
 .popup-hover p {
-  color: #666;
+  color: var(--color-primary);
   font-size: 0.95rem;
 }
 

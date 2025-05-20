@@ -25,12 +25,13 @@
   font-size: 3rem;
   margin-bottom: var(--spacing-sm);
   line-height: 1.2;
-  color: var(--color-light);
+   color: var(--color-primary);
 }
 
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: var(--spacing-md);
+  color: var(--color-primary);
 }
 
 .hero-buttons {
