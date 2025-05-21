@@ -1,4 +1,5 @@
 import React from 'react';
+import './css/serviceItem.css';
 
 const ServiceItem = ({ service, onMouseEnter, onMouseLeave }) => {
   const { title, description, images } = service;

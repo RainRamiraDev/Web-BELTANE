@@ -1,0 +1,78 @@
+/* Cada ítem de servicio */
+.service-item {
+  background: var(--color-secondary);
+  border-radius: 1rem;
+  padding: 1.75rem 1.5rem;
+  width: 260px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background-color 0.3s ease,
+    color 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  border: 1px solid transparent; /* Para evitar "jump" en hover */
+  user-select: none;
+  outline-offset: 3px;
+}
+
+/* Para que sea accesible con teclado */
+.service-item:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+/* Hover y foco */
+.service-item:hover,
+.service-item:focus-visible {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  border-color: var(--color-primary);
+  z-index: 2; /* Para que se sobreponga sobre otros */
+}
+
+/* Icono decorativo */
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: var(--color-primary);
+  transition: color 0.3s ease;
+}
+
+/* Cambiar color del icono en hover/focus */
+.service-item:hover .service-icon,
+.service-item:focus-visible .service-icon {
+  color: var(--color-text-light);
+}
+
+/* Título de cada servicio */
+.heading-md {
+  font-size: 1.35rem;
+  margin-bottom: 0.75rem;
+  color: var(--color-text-dark);
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+/* Cambiar color en hover/focus */
+.service-item:hover .heading-md,
+.service-item:focus-visible .heading-md {
+  color: var(--color-text-light);
+}
+
+/* Descripción */
+.paragraph {
+  font-size: 1rem;
+  color: var(--color-text-dark);
+  transition: color 0.3s ease;
+}
+
+/* Cambiar color en hover/focus */
+.service-item:hover .paragraph,
+.service-item:focus-visible .paragraph {
+  color: var(--color-text-light);
+}

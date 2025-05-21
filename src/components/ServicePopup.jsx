@@ -1,4 +1,5 @@
 import React from 'react';
+import './css/servicePopup.css';
 
 const ServicePopup = ({ service, position }) => {
   const { title, images } = service;

@@ -4,12 +4,12 @@
   justify-content: center;   /* Centra horizontalmente */
   min-height: 100vh;
   padding: 2rem;
-  background: linear-gradient(
-    135deg,
-    var(--color-dark) 0%,
-    var(--color-secondary) 40%,
-    var(--color-bg) 100%
-  );
+background: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ),
+    url('C:\Repositorios\BELTANE\Web-BELTANE\src\assets\hero-bg.png') center/cover no-repeat;
   color: var(--color-text-light);
   font-family: var(--font-main);
   text-align: center;        /* Centra texto */
@@ -36,7 +36,7 @@
 .hero-content p {
   font-size: 1.2rem;
   margin-bottom: var(--spacing-md);
-  color: var(--color-primary);
+  color: var(--color-text-light);
 }
 
 .hero-buttons {
