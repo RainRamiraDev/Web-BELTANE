@@ -129,20 +129,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn-primary {
   background-color: var(--color-primary);
-  color: white;
+  color: var(--color-text-light);
 }
 
 .btn-primary:hover {
-  background-color: #5e2d7c;
+  background-color: var(--color-secondary);
+  color: var(--color-text-dark);
 }
 
 .btn-secondary {
-  background-color: var(--color-secondary);
-  color: var(--color-dark);
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
 }
 
 .btn-secondary:hover {
-  background-color: #b89f7a;
+  background-color: var(--color-secondary);
+   color: var(--color-text-dark);
 }
 
 .btn-outline {

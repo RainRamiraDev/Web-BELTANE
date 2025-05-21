@@ -39,6 +39,9 @@
   gap: var(--spacing-sm);
 }
 
+/* Estilo base para todos los botones */
+
+
 .hero-images {
   display: flex;
   flex-wrap: wrap;

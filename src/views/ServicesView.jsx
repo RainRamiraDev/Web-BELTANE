@@ -1,6 +1,8 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { loadServices } from '../slices/servicesSlices';
+import ServiceItem from '../components/ServiceItem';
+import ServicePopup from '../components/ServicePopup';
 import '../components/css/ServiceView.css';
 
 const ServicesView = () => {
@@ -22,7 +24,7 @@ const ServicesView = () => {
     setHoveredService(service);
     setPopupPosition({
       top: rect.top + window.scrollY,
-      left: rect.right + 10
+      left: rect.right + 10,
     });
   };
 
@@ -37,36 +39,18 @@ const ServicesView = () => {
     <section className="services-section" ref={listRef}>
       <h2 className="heading-lg text-center">Servicios BELTANE</h2>
       <ul className="services-list">
-        {items.map(({ id, title, description, images }) => (
-          <li
-            className="service-item"
-            key={id}
-            onMouseEnter={(e) => handleMouseEnter(e, { title, description, images })}
+        {items.map((service) => (
+          <ServiceItem
+            key={service.id}
+            service={service}
+            onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
-          >
-            <div className="service-icon">✨</div>
-            <h3 className="heading-md">{title}</h3>
-            <p className="paragraph">{description}</p>
-          </li>
+          />
         ))}
       </ul>
 
       {hoveredService && (
-        <div
-          className="popup-hover"
-          style={{ top: popupPosition.top, left: popupPosition.left }}
-        >
-          <h4>{hoveredService.title}</h4>
-          {hoveredService.images?.length > 0 ? (
-            <img
-              src={hoveredService.images[0]}
-              alt={`Preview de ${hoveredService.title}`}
-              className="popup-image"
-            />
-          ) : (
-            <p>Sin imagen</p>
-          )}
-        </div>
+        <ServicePopup service={hoveredService} position={popupPosition} />
       )}
     </section>
   );
