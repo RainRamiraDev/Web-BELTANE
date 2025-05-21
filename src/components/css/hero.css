@@ -4,28 +4,33 @@
   justify-content: center;   /* Centra horizontalmente */
   min-height: 100vh;
   padding: 2rem;
-  background: linear-gradient(135deg,var(--color-dark) 0%,var(--color-bg) 100%);
-  color: #ecf0f1;
-  font-family: var(----font-main);
-  text-align: center;        /* Para que texto quede centrado */
+  background: linear-gradient(
+    135deg,
+    var(--color-dark) 0%,
+    var(--color-secondary) 40%,
+    var(--color-bg) 100%
+  );
+  color: var(--color-text-light);
+  font-family: var(--font-main);
+  text-align: center;        /* Centra texto */
+  overflow: hidden;          /* Para evitar scroll por animaciones */
 }
-
 
 .hero-content {
   max-width: 600px;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  align-items: center;      /* Centra los hijos horizontalmente */
+  align-items: center;
   justify-content: center;
 }
-
 
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: var(--spacing-sm);
   line-height: 1.2;
-   color: var(--color-primary);
+  color: var(--color-primary);
+  animation: colorFade 8s ease-in-out infinite;
 }
 
 .hero-content p {
@@ -39,8 +44,26 @@
   gap: var(--spacing-sm);
 }
 
-/* Estilo base para todos los botones */
+.hero-buttons button {
+  color: var(--color-text-light);
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-weight: 600;
+  /* Mantengo el transition para hover suave */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  /* Animación pulseColor */
+  animation: pulseColor 6s ease-in-out infinite;
+  animation-fill-mode: both;
+  background-color: var(--color-primary); /* Fijamos aquí para que animación pueda sobreescribir */
+}
 
+.hero-buttons button:hover {
+  background-color: var(--color-secondary);
+  box-shadow: 0 0 15px var(--color-secondary);
+}
 
 .hero-images {
   display: flex;
@@ -57,8 +80,8 @@
   user-select: none;
 }
 
-/* Animación fadeInUp: opacidad de 0 a 1 y desplazamiento vertical hacia arriba */
-/* Animación fadeInUp */
+/* Animaciones */
+
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -70,21 +93,40 @@
   }
 }
 
-/* Clase base para animar con fadeInUp */
 .animate-fadeInUp {
-  opacity: 0; /* empieza invisible */
+  opacity: 0;
   animation-name: fadeInUp;
   animation-duration: 1s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-out;
 }
 
-/* Diferentes delays para escalonar animación */
 .animate-delay-1 {
-  animation-delay: 0.3s;
+  animation-delay: 1s;
 }
 
 .animate-delay-2 {
-  animation-delay: 0.6s;
+  animation-delay: 1.5s;
 }
 
+@keyframes pulseColor {
+  0%, 100% {
+    transform: scale(1);
+    background-color: var(--color-primary);
+    box-shadow: 0 0 10px var(--color-primary);
+  }
+  50% {
+    transform: scale(1.05);
+    background-color: var(--color-secondary);
+    box-shadow: 0 0 20px var(--color-secondary);
+  }
+}
+
+@keyframes colorFade {
+  0%, 100% {
+    color: var(--color-primary);
+  }
+  50% {
+    color: var(--color-text-light);
+  }
+}
