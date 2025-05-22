@@ -1,0 +1,68 @@
+.custom-web-form {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.custom-web-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+  color: #333;
+}
+
+.custom-web-form .form-group {
+  margin-bottom: 1.2rem;
+}
+
+.custom-web-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.custom-web-form input[type="text"],
+.custom-web-form input[type="email"],
+.custom-web-form input[type="number"],
+.custom-web-form textarea,
+.custom-web-form select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.custom-web-form input:focus,
+.custom-web-form textarea:focus,
+.custom-web-form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.custom-web-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.custom-web-form button {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.custom-web-form button:hover {
+  background-color: #0056b3;
+}

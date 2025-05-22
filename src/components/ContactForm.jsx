@@ -1,5 +1,7 @@
 // src/components/ContactForm.jsx
 import React, { useState, useRef, useEffect } from 'react';
+import InputPer from '../components/InputPer';
+import TextAreaPer from '../components/TextAreaPer';
 import { sendContactEmail } from '../services/contactService';
 
 const ContactForm = () => {
@@ -27,10 +29,40 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (!formData.name || !formData.email || !formData.message) {
-      setError('Por favor, completa todos los campos.');
-      return;
-    }
+// Validación: campos vacíos
+  if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
+  setError('Por favor, completa todos los campos.');
+  return;
+}
+// Validación: solo letras en nombre
+if (!/^[a-zA-ZÁÉÍÓÚáéíóúñÑ\s]+$/.test(formData.name.trim())) {
+  setError('El nombre solo puede contener letras y espacios.');
+  return;
+}
+
+// Validación: email válido
+const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+if (!emailRegex.test(formData.email.trim())) {
+  setError('El correo electrónico no tiene un formato válido.');
+  return;
+}
+
+// Validación: longitud mínima y máxima
+if (formData.message.trim().length < 10) {
+  setError('El mensaje debe tener al menos 10 caracteres.');
+  return;
+}
+
+if (formData.name.trim().length > 50) {
+  setError('El nombre no debe superar los 50 caracteres.');
+  return;
+}
+
+if (formData.message.trim().length > 500) {
+  setError('El mensaje no debe superar los 500 caracteres.');
+  return;
+}
+
 
     setLoading(true);
     setError(null);
@@ -51,44 +83,39 @@ const ContactForm = () => {
     <>
       <form className="contact-form animate-fadeInUp animate-delay-2" onSubmit={handleSubmit} noValidate>
         <label htmlFor="name">Nombre</label>
-        <input
+        <InputPer
           type="text"
-          id="name"
           name="name"
-          placeholder="Tu nombre"
           value={formData.name}
-          onChange={handleChange}
-          required
+          plac="Tu nombre"
+          change={handleChange}
           disabled={loading}
         />
 
         <label htmlFor="email">Correo electrónico</label>
-        <input
+        <InputPer
           type="email"
-          id="email"
           name="email"
-          placeholder="tu@correo.com"
           value={formData.email}
-          onChange={handleChange}
-          required
+          plac="tu@correo.com"
+          change={handleChange}
           disabled={loading}
         />
 
         <label htmlFor="message">Mensaje</label>
-        <textarea
-          id="message"
+        <TextAreaPer
           name="message"
-          placeholder="Escribe tu mensaje aquí..."
-          rows="5"
           value={formData.message}
-          onChange={handleChange}
-          required
+          plac="Escribe tu mensaje aquí..."
+          change={handleChange}
           disabled={loading}
         />
 
+       <div className="button-container">
         <button type="submit" className="btn btn-primary" disabled={loading}>
           {loading ? 'Enviando...' : 'Enviar'}
         </button>
+      </div>
 
         {submitted && <p className="submit-message success">¡Gracias por contactarnos! Te responderemos pronto.</p>}
         {error && <p className="submit-message error">{error}</p>}

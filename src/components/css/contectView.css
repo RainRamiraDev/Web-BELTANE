@@ -50,15 +50,22 @@
 
 .btn {
   align-self: flex-start;
+  width: 200px;
   padding: 0.8rem 2rem;
   font-weight: 700;
   border-radius: 0.75rem;
   cursor: pointer;
   border: none;
-  background-color: var(--color-secondary);
-  color: var(--color-primary);
+  background-color: var(--success-message);
+  color: var(--color-secondary);
   transition: background-color 0.3s ease;
 }
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
 
 .btn:hover {
   background-color: var(--color-primary);

@@ -12,7 +12,7 @@ const Hero = () => {
           En <strong>BELTANE</strong> diseñamos sitios web, tiendas online y experiencias digitales con diseño y estrategia.
         </p>
         <div className="hero-buttons">
-          <a href="/contacto" className="btn btn-primary animate-button" role="button">
+          <a href="/presupuesto" className="btn btn-primary animate-button" role="button">
             Comenzar asesoramiento
           </a>
         </div>
