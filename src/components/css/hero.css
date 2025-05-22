@@ -127,6 +127,6 @@ background:
     color: var(--color-primary);
   }
   50% {
-    color: var(--color-text-light);
+    color: var(--success-message);
   }
 }
