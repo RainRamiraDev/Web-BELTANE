@@ -1,20 +1,17 @@
 .hero {
   display: flex;
-  align-items: center;       /* Centra verticalmente */
-  justify-content: center;   /* Centra horizontalmente */
+  align-items: center;       
+  justify-content: center;   
   min-height: 100vh;
   padding: 2rem;
-background: 
-    linear-gradient(
-      rgba(0, 0, 0, 0.6), 
-      rgba(0, 0, 0, 0.6)
-    ),
-    url('C:\Repositorios\BELTANE\Web-BELTANE\src\assets\hero-bg.png') center/cover no-repeat;
+  background: url('/src/assets/hero-bg.png') center/cover no-repeat;
   color: var(--color-text-light);
   font-family: var(--font-main);
-  text-align: center;        /* Centra texto */
-  overflow: hidden;          /* Para evitar scroll por animaciones */
+  text-align: center;
+  overflow: hidden;
 }
+
+
 
 .hero-content {
   max-width: 600px;

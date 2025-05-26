@@ -9,11 +9,10 @@
   width: 280px;
   z-index: 10;
 
-  /* Mostrar siempre que el componente esté en el DOM */
-  opacity: 1;
-  pointer-events: auto;
-  transform: translateY(0);
-  transition: none;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px) scale(0.8);
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
 

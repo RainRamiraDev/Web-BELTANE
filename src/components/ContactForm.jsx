@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import InputPer from '../components/InputPer';
 import TextAreaPer from '../components/TextAreaPer';
 import { sendContactEmail } from '../services/contactService';
+import '../components/css/customWebForm.css';
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });

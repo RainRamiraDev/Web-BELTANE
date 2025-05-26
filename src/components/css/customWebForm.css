@@ -2,27 +2,32 @@
   max-width: 700px;
   margin: 2rem auto;
   padding: 2rem;
-  background-color: #ffffff;
+  background-color: var(--color-primary);
   border-radius: 1rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: var(--font-main);
+  color: var(--text-color-light);
 }
 
 .custom-web-form h2 {
   text-align: center;
   margin-bottom: 1.5rem;
   font-size: 1.75rem;
-  color: #333;
+  font-weight: 700;
+  color: var(--text-color-light);
 }
 
 .custom-web-form .form-group {
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
 .custom-web-form label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: 600;
-  color: #444;
+  color: var(--text-color-light);
+  cursor: pointer;
+  user-select: none;
 }
 
 .custom-web-form input[type="text"],
@@ -31,38 +36,70 @@
 .custom-web-form textarea,
 .custom-web-form select {
   width: 100%;
-  padding: 0.75rem;
-  border: 1px solid #ccc;
+  padding: 0.75rem 1rem;
+  border: 1.5px solid #ccc;
   border-radius: 0.5rem;
   font-size: 1rem;
-  transition: border-color 0.3s;
+  font-weight: 400;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;
 }
 
-.custom-web-form input:focus,
+.custom-web-form input[type="text"]:focus,
+.custom-web-form input[type="email"]:focus,
+.custom-web-form input[type="number"]:focus,
 .custom-web-form textarea:focus,
 .custom-web-form select:focus {
   border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
   outline: none;
 }
 
 .custom-web-form textarea {
-  min-height: 100px;
+  min-height: 120px;
   resize: vertical;
+  font-family: inherit;
+  line-height: 1.5;
 }
 
 .custom-web-form button {
   width: 100%;
-  padding: 0.75rem;
-  background-color: #007bff;
-  color: white;
-  font-size: 1rem;
-  font-weight: bold;
+  padding: 0.85rem;
+  background-color: var(--color-primary);
+  color:var(--color-primary);
+  font-size: 1.1rem;
+  font-weight: 700;
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  user-select: none;
 }
 
-.custom-web-form button:hover {
+.custom-web-form button:hover:not(:disabled),
+.custom-web-form button:focus:not(:disabled) {
   background-color: #0056b3;
+  box-shadow: 0 0 8px rgba(0, 86, 179, 0.7);
+  outline: none;
+}
+
+.custom-web-form button:disabled {
+  background-color: #7ea9d9;
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+.custom-web-form .submit-message {
+  margin-top: 1rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.custom-web-form .submit-message.success {
+  color: #28a745; /* verde */
+}
+
+.custom-web-form .submit-message.error {
+  color: #dc3545; /* rojo */
 }

@@ -1,3 +1,10 @@
+.contact-title {
+  color: var(--color-secondary); /* naranja vibrante */
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+
 .contact-section {
   max-width: 600px;
   margin: 0 auto;

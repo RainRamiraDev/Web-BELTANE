@@ -3,7 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import InputPer from '../components/InputPer';
 import TextAreaPer from '../components/TextAreaPer';
 import { sendContactEmail } from '../services/contactService';
-import '../components/css/customWebForm.css'
+import '../components/css/CustomWebForm.css'
 
 const CustomWebForm = () => {
   const [formData, setFormData] = useState({
