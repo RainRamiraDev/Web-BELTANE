@@ -1,6 +1,6 @@
 // src/views/ContactView.jsx
 import React from 'react';
-import ContactForm from '../components/ContactForm';
+
 import '../components/css/contectView.css';
 
 const ContactView = () => {
@@ -11,7 +11,6 @@ const ContactView = () => {
         Ponte en contacto con nosotros para transformar tu proyecto digital.
       </p>
 
-      <ContactForm />
     </section>
   );
 };

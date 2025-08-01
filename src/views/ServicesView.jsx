@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { loadServices } from '../slices/servicesSlices';
 import ServiceItem from '../components/ServiceItem';
 import ServicePopup from '../components/ServicePopup';
 import '../components/css/ServiceView.css';

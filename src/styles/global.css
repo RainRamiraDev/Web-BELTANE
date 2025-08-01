@@ -4,16 +4,16 @@
 ============================== */
 
 :root {
-   --color-primary:   #0b1120;     /* Azul petróleo profundo */
-  --color-secondary: #F98603;     /* Naranja vibrante */
-  --color-bg:        #1a2238;     /* Azul más uniforme con el primary (menos púrpura que #0f172a) */
-  --color-bg-logo:   #FFE6CC;     /* Naranja pastel más suave, mejor transición con el secondary */
-  --color-text-dark: #1a1a1a;     /* Más uniforme con el dark general */
-  --color-text-light:#E2E8F0;     /* Un blanco azulado más moderno y legible en fondo oscuro */
-  --color-accent:    #e11d48;     /* Rosa fuerte vibrante */
-  --color-dark:      #0a0a0a;     /* Oscuridad real, más útil en overlays/modales */
-  --error-message:   #B00020;     /* Rojo profundo más moderno que #8A0303 */
-  --success-message: #F98603; 
+   --color-primary:   #0A1A2F;   /* Azul petróleo profundo, más frío y elegante */
+  --color-secondary: #5DADE2;   /* Celeste suave, armónico y profesional */
+  --color-bg:        #152238;   /* Azul noche uniforme, más frío que el anterior */
+  --color-bg-logo:   #D6ECF3;   /* Celeste pastel, claro y amigable con el fondo oscuro */
+  --color-text-dark: #1B1F23;   /* Gris azulado oscuro, sobrio y legible */
+  --color-text-light:#DDE9F4;   /* Azul grisáceo claro, más suave que un blanco puro */
+  --color-accent:    #4FB3D8;   /* Celeste vibrante, atractivo sin romper con la paleta fría */
+  --color-dark:      #0B0F14;   /* Azul casi negro, ideal para fondos profundos y modales */
+  --error-message:   #376387;   /* Azul grisáceo profundo, transmite seriedad sin romper estética */
+  --success-message: #66B2FF;   /* Celeste medio brillante, fresco y positivo */
 
 
   --font-main: 'Kanit', sans-serif;
