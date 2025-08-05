@@ -42,8 +42,6 @@
  * manteniendo la aplicación más organizada y fácil de mantener.
  */
 import React from 'react';
-import Header from './components/Navbar'; // asumiendo Navbar para consistencia
-import Footer from './components/Footer';
 import AppRoutes from './routes/AppRoutes';
 
 const App = () => {

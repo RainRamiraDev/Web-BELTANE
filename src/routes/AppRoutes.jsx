@@ -16,19 +16,11 @@
  */
 
 import { Routes, Route } from 'react-router-dom';
-import Home from '../views/Home';
-import ServicesView from '../views/ServicesView';
-// import PortfolioView from '../views/PortfolioView';
-import ContactView from '../views/ContactView';
-// import CustomWebView from  '../views/CustomWebView';
+
 
 const AppRoutes = () => (
   <Routes>
-    <Route path="/" element={<Home />} />
-    <Route path="/servicios" element={<ServicesView />} />
-    {/* <Route path="/portafolio" element={<PortfolioView />} /> */}
-    <Route path="/contacto" element={<ContactView />} />
-     {/* <Route path="/presupuesto" element={<CustomWebView />} /> */}
+/
   </Routes>
 );
 
